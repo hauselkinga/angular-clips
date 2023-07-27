@@ -4,14 +4,14 @@ import { ModalService } from '../services/modal.service';
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
-  styleUrls: ['./nav.component.css']
+  styleUrls: ['./nav.component.css'],
 })
 export class NavComponent {
- constructor(public modal: ModalService) { }
+  constructor(public modal: ModalService) {}
 
- openModal($event: Event) {
-  $event.preventDefault();
+  openModal($event: Event) {
+    $event.preventDefault();
 
-  this.modal.toggleModal();
- }
+    this.modal.toggleModal('auth');
+  }
 }
