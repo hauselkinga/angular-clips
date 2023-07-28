@@ -34,4 +34,8 @@ export class RegisterComponent {
       Validators.maxLength(11)
     ])
   })
+
+  register() {
+    console.log('register called')
+  }
 }
